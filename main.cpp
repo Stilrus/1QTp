@@ -1,20 +1,19 @@
 #include <QCoreApplication>
-#include <iostream>
+#include"iostream"
+#include <stdio.h>
+#include <stdlib.h>
 
 using namespace std;
+
 int main(int argc, char *argv[])
 {
-setlocale(0,"");
     QCoreApplication a(argc, argv);
 
-    int num_1, num_2, num_3;
-    cout << "VVedite 3 chisla " << endl;
+    int num_1;
 
+    cout << "nombr" << endl;
     cin >> num_1;
-    cin >> num_2;
-    cin >> num_3;
-    cout << "Arif progres "<<((num_1 + num_2 + num_3)/3) << endl;
-    cout << "Geom progres " << pow((num_1 * num_2 * num_3),(1.0/3)) << endl;
+    cout << (num_1/10) + (num_1%10);
 
     return 0;
 }
